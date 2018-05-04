@@ -1,0 +1,2328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sol",
+				"sol_state"
+			],
+			[
+				"digital",
+				"digitalWrite\tDeviot digitalWrite"
+			],
+			[
+				"in",
+				"inc\t#include \"…\""
+			],
+			[
+				"setup_",
+				"setup_wifi"
+			],
+			[
+				"get",
+				"get_arguments\tfunction"
+			],
+			[
+				"Arg",
+				"ArgumentParser\tclass"
+			],
+			[
+				"max",
+				"max_index\tstatement"
+			],
+			[
+				"INFO",
+				"INFO\tstatement"
+			],
+			[
+				"sav",
+				"save_to_excel\tfunction"
+			],
+			[
+				"sheet",
+				"sheetnames\tfunction"
+			],
+			[
+				"set",
+				"setattr\tfunction"
+			],
+			[
+				"crea",
+				"create_sheet\tfunction"
+			],
+			[
+				"Fil",
+				"FileNotFoundError\tclass"
+			],
+			[
+				"lo",
+				"load_workbook\tfunction"
+			],
+			[
+				"resis",
+				"resistance_sweep\tfunction"
+			],
+			[
+				"open",
+				"openpyxl\tmodule"
+			],
+			[
+				"ex",
+				"exit\tinstance"
+			],
+			[
+				"res",
+				"resistance_step\tstatement"
+			],
+			[
+				"wri",
+				"writerow"
+			],
+			[
+				"csv",
+				"csvwriter\tstatement"
+			],
+			[
+				"by",
+				"byref\tfunction"
+			],
+			[
+				"here",
+				"here"
+			],
+			[
+				"Retur",
+				"Returning"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"dge",
+				"debug"
+			],
+			[
+				"for",
+				"formatter\tstatement"
+			],
+			[
+				"Re",
+				"ResourceManager\tclass"
+			],
+			[
+				"del",
+				"del_check"
+			],
+			[
+				"data",
+				"data_count"
+			],
+			[
+				"com",
+				"command_ready"
+			],
+			[
+				"Co",
+				"command_ready"
+			],
+			[
+				"add",
+				"address_list\tstatement"
+			],
+			[
+				"ad",
+				"address_str\tstatement"
+			],
+			[
+				"edg",
+				"edge_idx_diff_n\tstatement"
+			],
+			[
+				"edge",
+				"edge_idx_diff\tstatement"
+			],
+			[
+				"dif",
+				"diff_data"
+			],
+			[
+				"edge_",
+				"edge_idx_diff\tstatement"
+			],
+			[
+				"diff",
+				"diff_2\tstatement"
+			],
+			[
+				"fo",
+				"formatter\tparam"
+			],
+			[
+				"row",
+				"row_totals\tstatement"
+			],
+			[
+				"sums",
+				"sums_abs\tstatement"
+			],
+			[
+				"su",
+				"sum\tfunction"
+			],
+			[
+				"positi",
+				"position_readout\tstatement"
+			],
+			[
+				"id",
+				"id_readout\tstatement"
+			],
+			[
+				"labe",
+				"labels\tstatement"
+			],
+			[
+				"pyqt",
+				"pyqtgraph\tmodule"
+			],
+			[
+				"bit",
+				"bit_pitch\tparam"
+			],
+			[
+				"ID",
+				"ID_err_readout_cum\tstatement"
+			],
+			[
+				"st",
+				"stpr\tstatement"
+			],
+			[
+				"X",
+				"X\tstatement"
+			],
+			[
+				"filter",
+				"filtered\tstatement"
+			],
+			[
+				"freq",
+				"freqz\tfunction"
+			],
+			[
+				"tap",
+				"tapsl\tstatement"
+			],
+			[
+				"high",
+				"high_pass\tstatement"
+			],
+			[
+				"Buff",
+				"BufferedRWPair\tclass"
+			],
+			[
+				"text",
+				"TextIOWrapper\tclass"
+			],
+			[
+				"Ser",
+				"SerialException"
+			],
+			[
+				"serial",
+				"serialutil"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"up",
+				"update_values\tfunction"
+			],
+			[
+				"pen",
+				"pen_id\tstatement"
+			],
+			[
+				"seq",
+				"sequences\tstatement"
+			],
+			[
+				"pos",
+				"position\tstatement"
+			],
+			[
+				"setT",
+				"setText\tfunction"
+			],
+			[
+				"po",
+				"position_readout\tstatement"
+			],
+			[
+				"I",
+				"Information\tinstance"
+			],
+			[
+				"cl",
+				"__class__\tclass"
+			],
+			[
+				"ser",
+				"SerialException\tclass"
+			],
+			[
+				"sh",
+				"show_dialog\tfunction"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"sig",
+				"sig_serial_error\tstatement"
+			],
+			[
+				"exist",
+				"exist_ok\tparam"
+			],
+			[
+				"make",
+				"make_sure_path_exists"
+			],
+			[
+				"run",
+				"run_monitor\tstatement"
+			],
+			[
+				"QGraphicsS",
+				"QGraphicsScene\tclass"
+			],
+			[
+				"left",
+				"left_graphic\tstatement"
+			],
+			[
+				"setTi",
+				"setTickSpacing"
+			],
+			[
+				"setup",
+				"setup_graph\tfunction"
+			],
+			[
+				"sig_",
+				"sig_raw_data\tstatement"
+			],
+			[
+				"Se",
+				"Serial_Monitor\tclass"
+			],
+			[
+				"line",
+				"linear_array_ui\tmodule"
+			],
+			[
+				"mul",
+				"multiply\tinstance"
+			],
+			[
+				"width",
+				"pixelWidth\tfunction"
+			],
+			[
+				"mult",
+				"multi_plot"
+			],
+			[
+				"multi",
+				"multi_plot"
+			],
+			[
+				"str",
+				"string\tparam"
+			],
+			[
+				"update_",
+				"update_event_lines"
+			],
+			[
+				"eve",
+				"event_signal\tstatement"
+			],
+			[
+				"ana",
+				"analog_data"
+			],
+			[
+				"test",
+				"test_rig\tstatement"
+			],
+			[
+				"upda",
+				"update_multi_plot\tfunction"
+			],
+			[
+				"live",
+				"live_indexes\tstatement"
+			],
+			[
+				"mu",
+				"multi_plot"
+			],
+			[
+				"dumm",
+				"dummy_button"
+			],
+			[
+				"ms",
+				"msleep\tfunction"
+			],
+			[
+				"new",
+				"new_values\tstatement"
+			],
+			[
+				"num",
+				"num_sensors\tstatement"
+			],
+			[
+				"abor",
+				"abort_button"
+			],
+			[
+				"update",
+				"update_system_diagram\tfunction"
+			],
+			[
+				"curre",
+				"currentRowChanged"
+			],
+			[
+				"ptr",
+				"ptr1\tstatement"
+			],
+			[
+				"grap",
+				"graph_data\tstatement"
+			],
+			[
+				"stir",
+				"stir_control\tfunction"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"sti",
+				"stirrer_button"
+			],
+			[
+				"li",
+				"live_labels\tstatement"
+			],
+			[
+				"en",
+				"enumerate\tclass"
+			],
+			[
+				"live_",
+				"live_indexes"
+			],
+			[
+				"reve",
+				"reverse"
+			],
+			[
+				"updat",
+				"update_threshold_line\tfunction"
+			],
+			[
+				"thr",
+				"threshold_line\tstatement"
+			],
+			[
+				"the",
+				"threshold_line\tstatement"
+			],
+			[
+				"thre",
+				"threshold\tparam"
+			],
+			[
+				"wait_",
+				"wait_signal\tstatement"
+			],
+			[
+				"A",
+				"A"
+			],
+			[
+				"blo",
+				"block_until_stopped"
+			],
+			[
+				"blc",
+				"block_until_stopped\tfunction"
+			],
+			[
+				"pum",
+				"pump_signal\tstatement"
+			],
+			[
+				"pump_s",
+				"pump_signal"
+			],
+			[
+				"rela",
+				"relay_interpreter\tfunction"
+			],
+			[
+				"spli",
+				"splitext\tfunction"
+			],
+			[
+				"spl",
+				"splitext\tfunction"
+			],
+			[
+				"jso",
+				"json_data\twithstmt"
+			],
+			[
+				"tes",
+				"Test_Rig\tclass"
+			],
+			[
+				"ins",
+				"instruction_filename\tstatement"
+			],
+			[
+				"cart",
+				"cartridge\tstatement"
+			],
+			[
+				"rfid",
+				"rfid_reader\tclass"
+			],
+			[
+				"instruc",
+				"instruction_string\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wifi-irrigation.ino",
+			"settings":
+			{
+				"buffer_size": 998,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "socket.cpp",
+			"settings":
+			{
+				"buffer_size": 1325,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/WebSocket.js",
+			"settings":
+			{
+				"buffer_size": 460,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\nSPIFFS started. Contents:\n    FS File: /index.html, size: 1.02KB\n    FS File: /main.css.gz, size: 556B\n    FS File: /sol.html, size: 153B\n    FS File: /WebSocket.js, size: 567B\n\nAccess Point \"ESP8266 Access Point\" started\nIP address: 192.168.4.1\nmDNS responder started\nWebSocket server started.\nhandleFileRead: /\n    Sent file: /index.html\nhandleFileRead: /main.css\n    Sent file: /main.css.gz\nhandleFileRead: /WebSocket.js\n    Sent file: /WebSocket.js\n[0] Connected from 192.168.4.2 url: /\n[0] get Text: Connect Fri May 04 2018 15:24:35 GMT+0100 (GMT Daylight Time)\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n\n\nSPIFFS started. Contents:\n    FS File: /index.html, size: 1.02KB\n    FS File: /main.css.gz, size: 556B\n    FS File: /sol.html, size: 153B\n    FS File: /WebSocket.js, size: 567B\n\nAccess Point \"ESP8266 Access Point\" started\nIP address: 192.168.4.1\nmDNS responder started\nWebSocket server started.\nhandleFileRead: /\n    Sent file: /index.html\nhandleFileRead: /main.css\n    Sent file: /main.css.gz\nhandleFileRead: /WebSocket.js\n    Sent file: /WebSocket.js\n[0] Connected from 192.168.4.2 url: /\n[0] get Text: Connect Fri May 04 2018 16:05:16 GMT+0100 (GMT Daylight Time)\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n",
+			"settings":
+			{
+				"buffer_size": 3483,
+				"line_ending": "Windows",
+				"name": "[ Deviot 2.2.1 ] Serial Monitor | COM28",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Channel"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 308.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/Personal/wifi-irrigation",
+		"/C/Projects/Personal/wifi-irrigation/data"
+	],
+	"file_history":
+	[
+		"/C/Projects/Personal/wifi-irrigation/data/index.html",
+		"/C/Projects/Personal/wifi-irrigation/data/WebSocket.js",
+		"/C/Projects/Personal/wifi-irrigation/server.cpp",
+		"/C/Users/FINLAY~1/AppData/Local/Temp/Deviot/wifi-irrigation/platformio.ini",
+		"/C/Projects/Personal/wifi-irrigation/socket.h",
+		"/C/Projects/Personal/wifi-irrigation/socket.cpp",
+		"/C/Projects/Personal/wifi-irrigation/wifi.h",
+		"/C/Projects/Personal/wifi-irrigation/wifi.cpp",
+		"/C/Projects/Personal/wifi-irrigation/header.h",
+		"/C/Projects/Personal/wifi-irrigation/socket.c",
+		"/C/Projects/Personal/wifi-irrigation/spiffs.cpp",
+		"/C/Projects/Personal/wifi-irrigation/data/sol.html",
+		"/C/Users/FINLAY~1/AppData/Local/Temp/Deviot/1525429320/src/1525429320.ino",
+		"/C/Projects/Personal/wifi-irrigation/server.h",
+		"/C/Projects/Personal/wifi-irrigation/spiffs.h",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/libs/stino_runtime/__init__.py",
+		"/C/Program Files (x86)/Arduino/libraries/WiFi/src/WiFiUdp.h",
+		"/C/Program Files (x86)/Arduino/libraries/WiFi/src/utility/wifi_drv.h",
+		"/C/Users/finlay knops-mckim/AppData/Local/Arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266WiFi/src/WiFiUdp.h",
+		"/C/Users/finlay knops-mckim/AppData/Local/Arduino15/packages/esp8266/hardware/esp8266/2.4.1/libraries/ESP8266mDNS/ESP8266mDNS.cpp",
+		"/C/Program Files (x86)/Arduino/libraries/WiFi/src/WiFiUdp.cpp",
+		"/C/Users/finlay knops-mckim/AppData/Local/Arduino15/packages/esp8266/hardware/esp8266/2.4.1/platform.txt",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/StinoCommands.py",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/libs/stino_runtime/const.py",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/libs/base_utils/c_file.py",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/libs/base_utils/downloader.py",
+		"/Y/Solivus - Beech Tree.CIL/50. Product Development/60. Software/10. Design/CIL-0005-SW B&K8600_Resistance_Sweep/bk_8600_sweep.py",
+		"/C/Users/finlay knops-mckim/Downloads/surface3d_demo.py",
+		"/C/Users/finlay knops-mckim/Documents/Python Scripts/bk_8600_sweep.py",
+		"/C/Users/finlay knops-mckim/Documents/Python Scripts/test_sample.py",
+		"/C/Users/Public/Documents/National Instruments/NI-VISA/Examples/C/General/RdWrt.c",
+		"/C/Users/Public/Documents/National Instruments/NI-VISA/Examples/C/USB/USBDescriptors.c",
+		"/C/Users/Public/Documents/National Instruments/NI-VISA/Examples/C/USB/RdWrtUSBTMC.c",
+		"/C/Anaconda3/Lib/site-packages/pyvisa/ctwrapper/highlevel.py",
+		"/C/Anaconda3/Lib/site-packages/pyvisa/ctwrapper/types.py",
+		"/C/Anaconda3/Lib/site-packages/pyvisa/highlevel.py",
+		"/C/Anaconda3/Lib/site-packages/pyvisa/ctwrapper/functions.py",
+		"/C/Users/finlay knops-mckim/Documents/Python Scripts/fwl_update.py",
+		"/C/Users/finlay knops-mckim/Documents/Haskell/TestFile.hs",
+		"/C/Users/finlay knops-mckim/Documents/Python Scripts/bk_8600_sweep",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/Marlin.ino",
+		"/Y/Gooee - Tight Fit.CIJ/20. Data Received/10. Client -Deliverables to CDP/WIM5a (Reference ONLY)/Documentation/Specifications/Flex-FW/emeter-dlt645.c",
+		"/Y/Lego - Emmet.CFC/50. Product Development/60. Software/10. Design/PID Serial Monitor/Serial_Monitor.py",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/Configuration.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/pins_SANGUINOLOLU_11.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/pins_SANGUINOLOLU_12.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/MarlinConfig.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/SanityCheck.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/boards.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/Marlin_main.cpp",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/Marlin/pins.h",
+		"/C/Users/finlay knops-mckim/Downloads/Marlin-1.1.x/Marlin-1.1.x/README.md",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/c_test/main.c",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/c_test/uart.h",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/c_test/uart.c",
+		"/C/Users/finlay knops-mckim/Documents/GitHub/Cable-Climbing-Robot/Arduino/Serial_delim/Serial_delim.ino",
+		"/Z/FTK/Arduino/c_test/main.c",
+		"/C/Users/finlay knops-mckim/Documents/Python Scripts/xbee_test.py",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/sketch_nov16a/sketch_nov16a.ino",
+		"/C/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Stream.cpp",
+		"/C/Anaconda3/Lib/site-packages/digi/xbee/devices.py",
+		"/C/Program Files (x86)/Arduino/examples/04.Communication/SerialCallResponse/SerialCallResponse.ino",
+		"/C/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/stdio.h",
+		"/C/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/iom328p.h",
+		"/C/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/power.h",
+		"/Z/FTK/Arduino/c_tests/uart.h",
+		"/Z/FTK/Arduino/c_tests/uart.c",
+		"/C/Projects/TopGun/Software/CAJ-0055-SW-1 Linear Array GUI/Linear Array GUI.py",
+		"/C/Projects/Kevin/Kevin 2B/CN0359 Logging Software/CN0359 Logger.py",
+		"/C/Projects/Kevin/Kevin 2B/CN0359 Logging Software/Serial_Monitor.py",
+		"/C/Projects/Kevin/Kevin 2A/Python/top_level_test.py",
+		"/C/Projects/TopGun/Software/python/SerialConnection.py",
+		"/C/Projects/TopGun/Software/python/test_viperAlgorithm.py",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/kptest_copy.m",
+		"/C/Projects/TopGun/Software/CAJ-0055-SW-1 Linear Array GUI/gui_sources/linear_array_ui.py",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/linear_array/reader.py",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/linear_array/graph_out.py",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/kptest.m",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/filterfirc_python.py",
+		"/C/Anaconda3/lib/site-packages/numpy/core/numeric.py",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/linear.m",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/lutpos409ndc.m",
+		"//cdp.local/data/TopGun/Eli Lilly - Slider Phase 3.CAJ/50. Product Development/50. Electronic/Linear Array DSP/First attempts at decoding (with blind-based optics)/lutseq409ndc.m",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/linear_array/linear_array.ino",
+		"/C/Users/finlay knops-mckim/Documents/GitHub/Cable-Climbing-Robot/robot_control_gui.py",
+		"/C/Users/finlay knops-mckim/Documents/GitHub/Cable-Climbing-Robot/robot_control.py",
+		"/C/Projects/TopGun/Software/CAJ-0055-SW-1 Linear Array GUI/linear_array_ui.py",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/linear_array/live_image.py",
+		"/C/Users/finlay knops-mckim/Documents/Arduino/PWM_OUT/PWM_OUT.ino",
+		"/Y/Omega Life Sciences - Globemaster Phase 1B.BZD/50. Product Development/60. Software/10. Design/globemaster_control/IncFile1.h",
+		"/C/Users/finlay knops-mckim/Downloads/millis-master/millis-master/examples/led_blink.c",
+		"/C/Projects/Kevin/Python/top_level_test.py",
+		"/C/Projects/Kevin/Python/backend/phidget_threads.py",
+		"/C/Projects/Kevin/Python/recipes/06 Filtration - Buffer Exchange.json",
+		"/C/Anaconda3/Lib/site-packages/pyqtgraph/examples/MultiplePlotAxes.py",
+		"/C/Anaconda3/Lib/site-packages/pyqtgraph/examples/MultiPlotSpeedTest.py",
+		"/C/Users/finlay knops-mckim/Downloads/multiplePlotSpeedTest.py",
+		"/C/Projects/Kevin/Python/backend/custom_phidget_library.py",
+		"/C/Projects/Kevin/Python/gui_code/sys_diagram_icons.py",
+		"/C/Projects/Kevin/Python/gui_code/graphicsviewtest.py",
+		"/Z/FTK/Python/left_right_algorithm.py",
+		"/Z/FTK/Python/wiper.py",
+		"/L/Top Gun - Viper Phase 2.BWU/50. Product Development/50. Electronic/Halfpipe sensor algorithm/BWU-0021-SW-A Halfpipe Sensor Algorithm.py",
+		"/Z/FTK/Python/Stainhart-Hart coef.py",
+		"/C/Projects/Kevin/Python/recipes/lab test.json",
+		"/C/Projects/Kevin/Python/recipes/01 Filtration - Primary Recovery.json",
+		"/C/Projects/Kevin/Python/recipes/02 Filtration - Bind Elute.json",
+		"/C/Projects/Kevin/Python/recipes/03 Mixing - PH Adjustment.json",
+		"/C/Projects/Kevin/Python/recipes/04 Filtration - Anionic Exchange.json",
+		"/C/Projects/Kevin/Python/recipes/05 Filtration - Size Exclusion.json",
+		"/Z/FTK/Python/x8200_test.py",
+		"/C/Projects/Kevin/Python/phidget_threads.py",
+		"/C/Projects/Kevin/Python/custom_phidget_library.py",
+		"/C/Projects/Kevin/Python/02 Filtration - Bind Elute.json",
+		"/C/Projects/Kevin/Python/recipes/04 Filtration - Anionic Exchange.json.json",
+		"/C/Projects/Kevin/Python/recipes/Mixing PH Adjustment.json",
+		"/C/Projects/Kevin/Python/recipes/Filtration.json",
+		"/C/Projects/Kevin/Python/recipes/Bind Elute.json",
+		"/C/Projects/Kevin/Python/recipes/ALPHA BETA.json",
+		"/C/Projects/Kevin/Python/recipes/ALPHA DELTA.json",
+		"/C/Projects/Kevin/Python/configuration.json",
+		"/C/Users/finlay knops-mckim/Downloads/Python_2.1.8.20160222/Python/Manager-simple.py",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/finlay knops-mckim/Downloads/Python_2.1.8.20160222/Python/InterfaceKit-simple.py",
+		"/Z/FTK/Python/graphicsviewtest.py",
+		"/C/Users/finlay knops-mckim/Downloads/pygraphviz-1.4rc1/pygraphviz-1.4rc1/INSTALL.txt",
+		"/C/Users/finlay knops-mckim/Downloads/pygraphviz-1.4rc1/pygraphviz-1.4rc1/setup_extra.py"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"void",
+			"\"\\\"build.board\"\\\"",
+			"\"\\\"{build.board}\"\\\"",
+			"\"{build.board}\"",
+			"board",
+			"\"{build.board}\"",
+			"ARDUINO_BOARD",
+			"-DARDUINO_BOARD=\"{build.board}\"",
+			"stino",
+			"stino =",
+			"sketch_builder",
+			"platform_paths",
+			"\"int\"",
+			"volts",
+			"amps",
+			"here",
+			"viOpenDefaultRM",
+			"ViPSession",
+			"viOpenDefaultRM",
+			"open",
+			"NIVisa",
+			"ResourceManager",
+			"VisaLibraryBase",
+			"creat",
+			"...:",
+			"data",
+			"timedRead",
+			"xbee",
+			"FDEV_SETUP_STREAM",
+			"sanitise_raw_data",
+			"deque",
+			"print",
+			"linearise_data",
+			"data",
+			"muddled",
+			"setup_diagram",
+			"id_err",
+			"ID_err",
+			"id_err",
+			"print",
+			"w",
+			"tapsl",
+			"w",
+			"printf",
+			";",
+			"% ",
+			"os",
+			"TextIOWrapper",
+			"IO",
+			"io",
+			"strftime",
+			"time",
+			"serial.serialutil.SerialException",
+			"IOError",
+			"make_sure_path_exists",
+			"csv",
+			"ser",
+			"muddled",
+			"glob",
+			"thresh_source",
+			"string",
+			"infin",
+			"update_threshold_line",
+			"360",
+			"analog_data",
+			"blue",
+			"update_threshold_line",
+			"analog_data",
+			"ax3",
+			"p3",
+			"p2",
+			"p1",
+			"idx",
+			"xrange",
+			"print",
+			"self",
+			"sig_graphs",
+			"init_multi_plot",
+			"plot",
+			"init_live_graphs",
+			"typ",
+			"Monitor",
+			"monitor_button",
+			"print",
+			"reset_scene",
+			"total",
+			"\":",
+			"update_system_diagram",
+			"update_diagram_valve",
+			"init_cartridge_check",
+			"colors",
+			"print",
+			"zeros",
+			"colors",
+			"ylabel",
+			"titles",
+			"blocking",
+			"valve_emmitter",
+			"blocking",
+			"update_diagram_pump",
+			"update_diagram_valve",
+			"\"type\": \"PUMP\",",
+			"wait_for_threshold",
+			"change_background",
+			"valves",
+			"pump",
+			"cartridge_state",
+			"c1_state",
+			"run_button",
+			"units\": \"ML\"",
+			"\"X\"",
+			"X",
+			"stirrer_interpreter",
+			"update_button_enable_states",
+			"run_button",
+			"init_cartridge_check",
+			"phidget",
+			"recipe_file_interpreter",
+			"init_cartridge_check",
+			"valid_cartridges",
+			"recipe",
+			"print_output",
+			"recipe",
+			"functions",
+			"p_class",
+			"pump_params",
+			"down",
+			"rotation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"-DARDUINO_BOARD=\\\"{build.board}\\\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wifi-irrigation.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								564
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										807,
+										808
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										521,
+										522
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										807,
+										808
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										521,
+										522
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "C:\\Projects\\Personal\\wifi-irrigation",
+							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "socket.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "C:\\Projects\\Personal\\wifi-irrigation",
+							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data/WebSocket.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								460,
+								460
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										459,
+										460
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										429,
+										430
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										459,
+										460
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										429,
+										430
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "C:\\Projects\\Personal\\wifi-irrigation",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3448,
+								3448
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "C:\\Projects\\Personal\\wifi-irrigation\\data",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2273.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 144.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.344610091743,
+			0.75,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.deviot":
+	{
+		"height": 286.0
+	},
+	"output.exec":
+	{
+		"height": 263.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_build_panel":
+	{
+		"height": 370.0
+	},
+	"output.stino_panel":
+	{
+		"height": 228.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585427.09706":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585444.264966":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585462.096078":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585551.712839":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585592.365057":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585612.885817":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585621.675419":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585667.020633":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585767.257842":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585785.361093":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484585854.90681":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641203.442972":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641247.593779":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641258.264561":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641268.154942":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641313.79783":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641325.227926":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641403.915301":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641454.976073":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641541.62576":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641575.61476":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641690.914669":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641694.948044":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484641705.461747":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642228.964706":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642275.976922":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642291.514371":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642315.680295":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642548.39733":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642624.84587":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642657.805189":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642660.614562":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642718.098034":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484642803.560909":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484643315.914341":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484647437.265695":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484648067.88047":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484648095.823111":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484648207.244777":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484648379.798031":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649531.987115":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649547.527424":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649612.380783":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649672.319764":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649678.387651":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649715.162075":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649719.44554":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649763.285556":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649928.327764":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649984.36358":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484649991.367611":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484650033.281532":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651402.259683":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651409.673562":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651734.665715":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651746.035669":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651824.283696":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651970.59621":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484651974.897537":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652046.637533":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652131.181838":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652148.089772":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652213.261705":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652228.605612":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652457.215637":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652880.32571":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652941.463564":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484652969.65165":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653187.921566":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653264.975164":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653287.473458":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653321.891551":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653351.841628":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653354.903531":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653358.103779":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653439.48153":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653638.761536":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653656.906724":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653727.211969":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653732.843518":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653812.371664":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484653951.82359":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484668993.396508":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484756778.206971":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484756837.118793":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484756926.327764":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484756933.413971":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484756997.574266":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484757062.142726":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484757092.471485":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484757221.790586":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484757225.863398":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484757274.382788":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911447.057926":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911499.962219":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911544.147256":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911635.752886":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911873.623693":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911875.647155":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484911913.503075":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915070.636173":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915091.475696":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915103.665075":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915149.111075":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915197.616549":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915215.337414":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915303.392205":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915530.092432":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\PWM_OUT|1484915566.1814":
+	{
+		"height": 120.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\linear_array|1496911840.691685":
+	{
+		"height": 126.0
+	},
+	"output.upload|C:\\Users\\finlay knops-mckim\\Documents\\Arduino\\linear_array|1496911860.268192":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "",
+	"project": "wifi-irrigation.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 176.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
