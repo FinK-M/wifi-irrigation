@@ -34,13 +34,30 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
       
 
         // if new text data is received
-        case WStype_TEXT:                     
+        case WStype_TEXT:{                    
             Serial.printf("[%u] get Text: %s\n", num, payload);
-            // we get RGB data
-            if (0 == strcmp((char*)payload, "SOL")) {
-                Serial.println("Solenoid Command");
+            String text = String((char*)payload);
+            if (text.startsWith("SOL")) {
+              switch (text[4]) {
+                  case '1':
+                    Serial.println("Solenoid 1");
+                    break;
+                  case '2':
+                    Serial.println("Solenoid 2");
+                    break;
+                  case '3':
+                    Serial.println("Solenoid 3");
+                    break;
+                  case '4':
+                    Serial.println("Solenoid 4");
+                    break;
+                  default:
+                    Serial.println("Default");
+              }
+                
                 sol_state = !sol_state;
                 webSocket.sendTXT(0, "Solenoid Switched");
+            }
             }
             break;
 

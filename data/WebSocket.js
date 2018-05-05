@@ -21,9 +21,10 @@ function toggle (num) {
 }
 
 function buttons_disabled(state){
+	console.log(`Buttons disabled: ${state}`)
 	var buttons = document.getElementsByClassName("button");
 	var i;
 	for (i = 0; i < buttons.length; i++){
-		buttons[i].disbled = state;
+		buttons[i].disabled = state;
 	}
 }
