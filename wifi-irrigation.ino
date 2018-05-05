@@ -1,10 +1,16 @@
 #include "header.h"
 
 // Pin on which solenoid is located
-const int solenoid_1 = D5;
-const int solenoid_2 = D6;
-const int solenoid_3 = D7;
-const int solenoid_4 = D8;
+extern const int solenoid_1 = D5;
+extern const int solenoid_2 = D6;
+extern const int solenoid_3 = D7;
+extern const int solenoid_4 = D8;
+
+bool sol_state_1 = true;
+bool sol_state_2 = true;
+bool sol_state_3 = true;
+bool sol_state_4 = true;
+
 // The name of the Wi-Fi network that will be created
 const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
@@ -16,8 +22,6 @@ const char *name = "solenoid";
 ESP8266WebServer server(80);
 // Create a websocket server on port 81
 WebSocketsServer webSocket = WebSocketsServer(81);
-
-extern bool sol_state;
 
 
 void setup() {
@@ -49,7 +53,6 @@ void loop(void){
     webSocket.loop();                   
     // Listen for HTTP requests from clients
     server.handleClient();
-    digitalWrite(D8, sol_state);
 }
 
 
