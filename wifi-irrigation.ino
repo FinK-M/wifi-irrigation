@@ -1,7 +1,10 @@
 #include "header.h"
 
 // Pin on which solenoid is located
-const int sol_pin = D8;
+const int solenoid_1 = D5;
+const int solenoid_2 = D6;
+const int solenoid_3 = D7;
+const int solenoid_4 = D8;
 // The name of the Wi-Fi network that will be created
 const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
@@ -18,9 +21,15 @@ extern bool sol_state;
 
 
 void setup() {
-    // Set solenoid pin as output and drive it high
-    pinMode(sol_pin, OUTPUT);
-    digitalWrite(sol_pin, HIGH);  
+    // Set solenoid pins as output and drive them high
+    pinMode(solenoid_1, OUTPUT);
+    pinMode(solenoid_2, OUTPUT);
+    pinMode(solenoid_3, OUTPUT);
+    pinMode(solenoid_4, OUTPUT);
+    digitalWrite(solenoid_1, HIGH);
+    digitalWrite(solenoid_2, HIGH);  
+    digitalWrite(solenoid_3, HIGH);  
+    digitalWrite(solenoid_4, HIGH);  
 
     // Clear any previously stored WiFi configuration
     ESP.eraseConfig();

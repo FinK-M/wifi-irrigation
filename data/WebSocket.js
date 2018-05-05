@@ -3,8 +3,7 @@
 var connection = new WebSocket('ws://' + location.hostname + ':81/', ['arduino']);
 connection.onopen = function () {
   connection.send('Connect ' + new Date());
-  document.getElementById('toggle_button').disbled = false;
-  document.getElementById('toggle_button').style.backgroundColor = '#00878F';
+  buttons_disabled(false);
 };
 connection.onerror = function (error) {
   console.log('WebSocket Error ', error);
@@ -16,10 +15,15 @@ connection.onclose = function () {
   console.log('WebSocket connection closed');
 };
 
-function toggle () {
-    connection.send("SOL");
+function toggle (num) {
+	console.log(`Toggling solenoid ${num}`)
+    connection.send(`SOL:${num}`);
 }
 
-function disable_on_load(){
-	document.getElementById('toggle_button').disbled = true;
+function buttons_disabled(state){
+	var buttons = document.getElementsByClassName("button");
+	var i;
+	for (i = 0; i < buttons.length; i++){
+		buttons[i].disbled = state;
+	}
 }
