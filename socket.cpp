@@ -16,26 +16,35 @@ void setup_socket() {
 }
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght) {
-  switch (type) {
-    // if the websocket is disconnected
-    case WStype_DISCONNECTED:             
-      Serial.printf("[%u] Disconnected!\n", num);
-      break;
+    switch (type) {
 
-    // if a new websocket connection is established
-    case WStype_CONNECTED: {              
-        IPAddress ip = webSocket.remoteIP(num);
-        Serial.printf("[%u] Connected from %d.%d.%d.%d url: %s\n", num, ip[0], ip[1], ip[2], ip[3], payload);             
-      }
-      break;
-    // if new text data is received
-    case WStype_TEXT:                     
-      Serial.printf("[%u] get Text: %s\n", num, payload);
-      // we get RGB data
-      if (0 == strcmp((char*)payload, "SOL")) {
-        Serial.println("Solenoid Command");
-        sol_state = !sol_state;
-      }
-      break;
-  }
+        // if the websocket is disconnected
+        case WStype_DISCONNECTED:             
+            Serial.printf("[%u] Disconnected!\n", num);
+            break;
+
+        // if a new websocket connection is established
+        case WStype_CONNECTED: {          
+            IPAddress ip = webSocket.remoteIP(num);
+            Serial.printf(
+                "[%u] Connected from %d.%d.%d.%d url: %s\n",
+                num, ip[0], ip[1], ip[2], ip[3], payload);
+            }             
+            break;
+      
+
+        // if new text data is received
+        case WStype_TEXT:                     
+            Serial.printf("[%u] get Text: %s\n", num, payload);
+            // we get RGB data
+            if (0 == strcmp((char*)payload, "SOL")) {
+                Serial.println("Solenoid Command");
+                sol_state = !sol_state;
+                webSocket.sendTXT(0, "Solenoid Switched");
+            }
+            break;
+
+        default:
+            Serial.printf("Unhandled Signal Type\n");
+    }
 }

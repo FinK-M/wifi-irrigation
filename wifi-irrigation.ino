@@ -1,6 +1,8 @@
 #include "header.h"
 
- // The name of the Wi-Fi network that will be created
+// Pin on which solenoid is located
+const int sol_pin = D8;
+// The name of the Wi-Fi network that will be created
 const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
 const char *password = "password";
@@ -16,28 +18,29 @@ extern bool sol_state;
 
 
 void setup() {
-  // Clear any previously stored WiFi configuration
-  ESP.eraseConfig();
+    // Set solenoid pin as output and drive it high
+    pinMode(sol_pin, OUTPUT);
+    digitalWrite(sol_pin, HIGH);  
 
-  Serial.begin(115200);
-  delay(10);
-  Serial.println('\n');
+    // Clear any previously stored WiFi configuration
+    ESP.eraseConfig();
 
-  setup_fs();
-  setup_wifi(name, ssid, password);
-  setup_server();
-  setup_socket();
+    Serial.begin(115200);
+    delay(10);
+    Serial.println('\n');
 
-  pinMode(D8, OUTPUT);
-  digitalWrite(D8, HIGH);            
+    setup_fs();
+    setup_wifi(name, ssid, password);
+    setup_server();
+    setup_socket();   
 }
 
 void loop(void){
-  // Check for socket events
-  webSocket.loop();                   
-  // Listen for HTTP requests from clients
-  server.handleClient();
-  digitalWrite(D8, sol_state);
+    // Check for socket events
+    webSocket.loop();                   
+    // Listen for HTTP requests from clients
+    server.handleClient();
+    digitalWrite(D8, sol_state);
 }
 
 
