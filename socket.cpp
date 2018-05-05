@@ -46,27 +46,34 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
             String text = String((char*)payload);
             if (text.startsWith("SOL")) {
               Serial.printf("Solenoid %c switched\r\n", text[4]);
-              webSocket.sendTXT(0, "Solenoid Switched");
+              char buffer[20];
+              
+              
               switch (text[4]) {
                   case '1':
                     sol_state_1 = !sol_state_1;
                     digitalWrite(solenoid_1, sol_state_1);
+                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_1);
                     break;
                   case '2':
                     sol_state_2 = !sol_state_2;
                     digitalWrite(solenoid_2, sol_state_2);
+                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_2);
                     break;
                   case '3':
                     sol_state_3 = !sol_state_3;
                     digitalWrite(solenoid_3, sol_state_3);
+                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_3);
                     break;
                   case '4':
                     sol_state_4 = !sol_state_4;
                     digitalWrite(solenoid_4, sol_state_4);
+                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_4);
                     break;
                   default:
                     Serial.println("Default");
               }
+              webSocket.sendTXT(num, buffer);
                 
             }
             }

@@ -10,6 +10,14 @@ connection.onerror = function (error) {
 };
 connection.onmessage = function (e) {
   console.log('Server: ', e.data);
+  var message = e.data.split(':');
+  if(message[0] == "SOL"){
+  	var num = Number(message[1]);
+  	var state = Number(message[2]);
+  	var button = document.getElementById(`sol_button_${num}`);
+  	if(state){ button.style.backgroundColor = "#00E640"; }
+  	else{ button.style.backgroundColor = "#CF000F"; }
+  }
 };
 connection.onclose = function () {
   console.log('WebSocket connection closed');
