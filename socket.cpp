@@ -2,14 +2,9 @@
 
 extern WebSocketsServer webSocket;
 
-extern bool sol_state_1;
-extern bool sol_state_2;
-extern bool sol_state_3;
-extern bool sol_state_4;
-extern int solenoid_1;
-extern int solenoid_2;
-extern int solenoid_3;
-extern int solenoid_4;
+extern bool solenoid_states[];
+extern int solenoid_pins[];
+extern int NUM_SOLENOIDS;
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght);
 
@@ -48,31 +43,10 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
               Serial.printf("Solenoid %c switched\r\n", text[4]);
               char buffer[20];
               
-              
-              switch (text[4]) {
-                  case '1':
-                    sol_state_1 = !sol_state_1;
-                    digitalWrite(solenoid_1, sol_state_1);
-                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_1);
-                    break;
-                  case '2':
-                    sol_state_2 = !sol_state_2;
-                    digitalWrite(solenoid_2, sol_state_2);
-                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_2);
-                    break;
-                  case '3':
-                    sol_state_3 = !sol_state_3;
-                    digitalWrite(solenoid_3, sol_state_3);
-                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_3);
-                    break;
-                  case '4':
-                    sol_state_4 = !sol_state_4;
-                    digitalWrite(solenoid_4, sol_state_4);
-                    sprintf(buffer, "SOL:%c:%d", text[4], !sol_state_4);
-                    break;
-                  default:
-                    Serial.println("Default");
-              }
+              int sol_num = text[4] - '0' - 1;
+              solenoid_states[sol_num] = !solenoid_states[sol_num];
+              digitalWrite(solenoid_pins[sol_num], solenoid_states[sol_num]);
+              sprintf(buffer, "SOL:%c:%d", text[4], !solenoid_states[sol_num]);
               webSocket.sendTXT(num, buffer);
                 
             }
@@ -80,14 +54,10 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
               if (text.startsWith("STATE", 1)){
                 Serial.println("Sending Solenoid State");
                 char buffer[20];
-                sprintf(buffer, "SOL:%c:%d", '1', !sol_state_1);
-                webSocket.sendTXT(num, buffer);
-                sprintf(buffer, "SOL:%c:%d", '2', !sol_state_2);
-                webSocket.sendTXT(num, buffer);
-                sprintf(buffer, "SOL:%c:%d", '3', !sol_state_3);
-                webSocket.sendTXT(num, buffer);
-                sprintf(buffer, "SOL:%c:%d", '4', !sol_state_4);
-                webSocket.sendTXT(num, buffer);
+                for(int i = 0; i < NUM_SOLENOIDS; i++){
+                  sprintf(buffer, "SOL:%d:%d", i + 1, !solenoid_states[i]);
+                  webSocket.sendTXT(num, buffer);
+                }
               }
             }
             }
@@ -97,3 +67,5 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
             Serial.printf("Unhandled Signal Type\n");
     }
 }
+
+//static void command_interpreter(String command, uint8_t num)

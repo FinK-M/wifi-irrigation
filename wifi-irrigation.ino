@@ -1,15 +1,11 @@
 #include "header.h"
 
+// Number of solenoids connected to MCU
+extern const int NUM_SOLENOIDS = 4;
 // Pin on which solenoid is located
-extern const int solenoid_1 = D5;
-extern const int solenoid_2 = D6;
-extern const int solenoid_3 = D7;
-extern const int solenoid_4 = D8;
-
-bool sol_state_1 = true;
-bool sol_state_2 = true;
-bool sol_state_3 = true;
-bool sol_state_4 = true;
+extern const int solenoid_pins[NUM_SOLENOIDS] = {D5, D6, D7, D8};
+// Solenoid states (True is disabled as pullup)
+bool solenoid_states[NUM_SOLENOIDS] = {true, true, true, true};
 
 // The name of the Wi-Fi network that will be created
 const char *ssid = "ESP8266 Access Point";
@@ -26,14 +22,10 @@ WebSocketsServer webSocket = WebSocketsServer(81);
 
 void setup() {
     // Set solenoid pins as output and drive them high
-    pinMode(solenoid_1, OUTPUT);
-    pinMode(solenoid_2, OUTPUT);
-    pinMode(solenoid_3, OUTPUT);
-    pinMode(solenoid_4, OUTPUT);
-    digitalWrite(solenoid_1, HIGH);
-    digitalWrite(solenoid_2, HIGH);  
-    digitalWrite(solenoid_3, HIGH);  
-    digitalWrite(solenoid_4, HIGH);  
+    for(uint8_t i = 0; i < NUM_SOLENOIDS; i++){
+      pinMode(solenoid_pins[i], OUTPUT);
+      digitalWrite(solenoid_pins[i], HIGH);
+    } 
 
     // Clear any previously stored WiFi configuration
     ESP.eraseConfig();
