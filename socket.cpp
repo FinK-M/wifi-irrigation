@@ -76,6 +76,20 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
               webSocket.sendTXT(num, buffer);
                 
             }
+            else if (text.startsWith("?")){
+              if (text.startsWith("STATE", 1)){
+                Serial.println("Sending Solenoid State");
+                char buffer[20];
+                sprintf(buffer, "SOL:%c:%d", '1', !sol_state_1);
+                webSocket.sendTXT(num, buffer);
+                sprintf(buffer, "SOL:%c:%d", '2', !sol_state_2);
+                webSocket.sendTXT(num, buffer);
+                sprintf(buffer, "SOL:%c:%d", '3', !sol_state_3);
+                webSocket.sendTXT(num, buffer);
+                sprintf(buffer, "SOL:%c:%d", '4', !sol_state_4);
+                webSocket.sendTXT(num, buffer);
+              }
+            }
             }
             break;
 

@@ -3,6 +3,7 @@
 var connection = new WebSocket('ws://' + location.hostname + ':81/', ['arduino']);
 connection.onopen = function () {
   connection.send('Connect ' + new Date());
+  connection.send("?STATE");
   buttons_disabled(false);
 };
 connection.onerror = function (error) {
