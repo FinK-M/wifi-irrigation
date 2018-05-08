@@ -4,28 +4,8 @@
 		"selected_items":
 		[
 			[
-				"send",
-				"sendTXT"
-			],
-			[
-				"webS",
-				"websocket"
-			],
-			[
 				"sol",
-				"sol_state_1"
-			],
-			[
-				"co",
-				"console"
-			],
-			[
-				"swi",
-				"switch\tDeviot switch"
-			],
-			[
-				"butt",
-				"buttons_disabled"
+				"sol_state"
 			],
 			[
 				"digital",
@@ -300,6 +280,10 @@
 				"show_dialog\tfunction"
 			],
 			[
+				"co",
+				"connect"
+			],
+			[
 				"sig",
 				"sig_serial_error\tstatement"
 			],
@@ -514,6 +498,22 @@
 			[
 				"tes",
 				"Test_Rig\tclass"
+			],
+			[
+				"ins",
+				"instruction_filename\tstatement"
+			],
+			[
+				"cart",
+				"cartridge\tstatement"
+			],
+			[
+				"rfid",
+				"rfid_reader\tclass"
+			],
+			[
+				"instruc",
+				"instruction_string\tstatement"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "wifi-irrigation.ino",
 			"settings":
 			{
-				"buffer_size": 1521,
+				"buffer_size": 1396,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "socket.cpp",
 			"settings":
 			{
-				"buffer_size": 2891,
+				"buffer_size": 2456,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,17 +541,20 @@
 			"file": "data/WebSocket.js",
 			"settings":
 			{
-				"buffer_size": 1068,
+				"buffer_size": 1097,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "data/index.html",
+			"contents": "\n\nSPIFFS started. Contents:\n    FS File: /index.html, size: 1.02KB\n    FS File: /main.css.gz, size: 556B\n    FS File: /sol.html, size: 153B\n    FS File: /WebSocket.js, size: 567B\n\nAccess Point \"ESP8266 Access Point\" started\nIP address: 192.168.4.1\nmDNS responder started\nWebSocket server started.\nhandleFileRead: /\n    Sent file: /index.html\nhandleFileRead: /main.css\n    Sent file: /main.css.gz\nhandleFileRead: /WebSocket.js\n    Sent file: /WebSocket.js\n[0] Connected from 192.168.4.2 url: /\n[0] get Text: Connect Fri May 04 2018 15:24:35 GMT+0100 (GMT Daylight Time)\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n\n\nSPIFFS started. Contents:\n    FS File: /index.html, size: 1.02KB\n    FS File: /main.css.gz, size: 556B\n    FS File: /sol.html, size: 153B\n    FS File: /WebSocket.js, size: 567B\n\nAccess Point \"ESP8266 Access Point\" started\nIP address: 192.168.4.1\nmDNS responder started\nWebSocket server started.\nhandleFileRead: /\n    Sent file: /index.html\nhandleFileRead: /main.css\n    Sent file: /main.css.gz\nhandleFileRead: /WebSocket.js\n    Sent file: /WebSocket.js\n[0] Connected from 192.168.4.2 url: /\n[0] get Text: Connect Fri May 04 2018 16:05:16 GMT+0100 (GMT Daylight Time)\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n[0] get Text: SOL\nSolenoid Command\n",
 			"settings":
 			{
-				"buffer_size": 1522,
-				"line_ending": "Windows"
+				"buffer_size": 3483,
+				"line_ending": "Windows",
+				"name": "[ Deviot 2.2.1 ] Serial Monitor | COM28",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -659,7 +662,7 @@
 				"Package Control: Remove Channel"
 			]
 		],
-		"width": 301.0
+		"width": 528.0
 	},
 	"console":
 	{
@@ -680,17 +683,11 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Projects/wifi-irrigation",
-		"/C/Projects/wifi-irrigation/data"
+		"/C/Projects/Personal/wifi-irrigation",
+		"/C/Projects/Personal/wifi-irrigation/data"
 	],
 	"file_history":
 	[
-		"/C/Projects/wifi-irrigation/data/WebSocket.js",
-		"/C/Projects/wifi-irrigation/data/main.css",
-		"/C/Projects/wifi-irrigation/data/index.html",
-		"/C/Projects/wifi-irrigation/socket.cpp",
-		"/C/Projects/wifi-irrigation/wifi.h",
-		"/C/Projects/wifi-irrigation/wifi.cpp",
 		"/C/Projects/Personal/wifi-irrigation/data/index.html",
 		"/C/Projects/Personal/wifi-irrigation/data/WebSocket.js",
 		"/C/Projects/Personal/wifi-irrigation/server.cpp",
@@ -812,11 +809,17 @@
 		"/C/Projects/Kevin/Python/recipes/ALPHA BETA.json",
 		"/C/Projects/Kevin/Python/recipes/ALPHA DELTA.json",
 		"/C/Projects/Kevin/Python/configuration.json",
-		"/C/Users/finlay knops-mckim/Downloads/Python_2.1.8.20160222/Python/Manager-simple.py"
+		"/C/Users/finlay knops-mckim/Downloads/Python_2.1.8.20160222/Python/Manager-simple.py",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/finlay knops-mckim/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/finlay knops-mckim/Downloads/Python_2.1.8.20160222/Python/InterfaceKit-simple.py",
+		"/Z/FTK/Python/graphicsviewtest.py",
+		"/C/Users/finlay knops-mckim/Downloads/pygraphviz-1.4rc1/pygraphviz-1.4rc1/INSTALL.txt",
+		"/C/Users/finlay knops-mckim/Downloads/pygraphviz-1.4rc1/pygraphviz-1.4rc1/setup_extra.py"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -830,15 +833,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"sendTXT",
-			"buttons[num]",
-			"const",
-			"true",
-			"solenoid_1",
-			"solenoid",
-			"style=\"background-color:#999\"",
-			"toggle_button",
-			"sol_pin",
 			"void",
 			"\"\\\"build.board\"\\\"",
 			"\"\\\"{build.board}\"\\\"",
@@ -957,7 +951,16 @@
 			"init_cartridge_check",
 			"phidget",
 			"recipe_file_interpreter",
-			"init_cartridge_check"
+			"init_cartridge_check",
+			"valid_cartridges",
+			"recipe",
+			"print_output",
+			"recipe",
+			"functions",
+			"p_class",
+			"pump_params",
+			"down",
+			"rotation"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -976,7 +979,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -985,15 +988,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1521,
+						"buffer_size": 1396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1063,
-								1063
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1092,27 +1095,197 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										807,
-										808
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										521,
-										522
-									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "C:\\Projects\\Personal\\wifi-irrigation",
+							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "socket.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
 								},
 								"unmatched":
 								{
@@ -1182,40 +1355,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 312.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "socket.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2096,
-								2096
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Deviot (Arduino IDE)/deviot.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 546.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1224,69 +1367,381 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1068,
+						"buffer_size": 1097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								859,
+								859
 							]
 						],
 						"settings":
 						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										877,
+										878
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										799,
+										800
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "C:\\Projects\\Personal\\wifi-irrigation",
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 78.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 3,
-					"file": "data/index.html",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1522,
+						"buffer_size": 3483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								971,
-								959
+								3448,
+								3448
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "C:\\Projects\\Personal\\wifi-irrigation\\data",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 234.0,
+						"translation.y": 2273.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				}
 			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1307,12 +1762,19 @@
 				0,
 				2,
 				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.344610091743,
+			0.75,
 			1.0
 		],
 		"rows":
@@ -1324,7 +1786,7 @@
 	"menu_visible": true,
 	"output.deviot":
 	{
-		"height": 233.0
+		"height": 286.0
 	},
 	"output.exec":
 	{
@@ -1790,7 +2252,7 @@
 	"project": "wifi-irrigation.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1820,7 +2282,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

@@ -7,6 +7,7 @@ extern int solenoid_pins[];
 extern int NUM_SOLENOIDS;
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght);
+static void command_interpreter(String command, uint8_t num);
 
 // Start a WebSocket server
 void setup_socket() {
@@ -36,30 +37,11 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
       
 
         // if new text data is received
-        case WStype_TEXT:{                    
+        case WStype_TEXT:{
             Serial.printf("[%u] get Text: %s\n", num, payload);
+            // Convert payload from uint8_t array to string object
             String text = String((char*)payload);
-            if (text.startsWith("SOL")) {
-              Serial.printf("Solenoid %c switched\r\n", text[4]);
-              char buffer[20];
-              
-              int sol_num = text[4] - '0' - 1;
-              solenoid_states[sol_num] = !solenoid_states[sol_num];
-              digitalWrite(solenoid_pins[sol_num], solenoid_states[sol_num]);
-              sprintf(buffer, "SOL:%c:%d", text[4], !solenoid_states[sol_num]);
-              webSocket.sendTXT(num, buffer);
-                
-            }
-            else if (text.startsWith("?")){
-              if (text.startsWith("STATE", 1)){
-                Serial.println("Sending Solenoid State");
-                char buffer[20];
-                for(int i = 0; i < NUM_SOLENOIDS; i++){
-                  sprintf(buffer, "SOL:%d:%d", i + 1, !solenoid_states[i]);
-                  webSocket.sendTXT(num, buffer);
-                }
-              }
-            }
+            command_interpreter(text, num);
             }
             break;
 
@@ -68,4 +50,35 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
     }
 }
 
-//static void command_interpreter(String command, uint8_t num)
+static void command_interpreter(String command, uint8_t num){
+  // Buffer for socket messages                    
+  char buffer[20];
+
+  if (command.startsWith("SOL")) {
+    Serial.printf("Solenoid %c switched\r\n", command[4]);
+    // Convert ASCII character to equivalent int, then offset by 1
+    int sol_num = command[4] - '0' - 1;
+
+    // Flip chosen solenoid state and change flag
+    solenoid_states[sol_num] = !solenoid_states[sol_num];
+    digitalWrite(solenoid_pins[sol_num], solenoid_states[sol_num]);
+
+    // Construct confirmation message and send into socket
+    sprintf(buffer, "SOL:%c:%d", command[4], !solenoid_states[sol_num]);
+    webSocket.sendTXT(num, buffer);
+      
+  }
+  // '?' is query character
+  else if (command.startsWith("?")){
+    // Get status of all solenoids
+    if (command.startsWith("STATE", 1)){
+      Serial.println("Sending Solenoid State");
+      // Send individual messages for each solenoid to reuse .js code for
+      // setting individual button colours
+      for(int i = 0; i < NUM_SOLENOIDS; i++){
+        sprintf(buffer, "SOL:%d:%d", i + 1, !solenoid_states[i]);
+        webSocket.sendTXT(num, buffer);
+      }
+    }
+  }
+}
