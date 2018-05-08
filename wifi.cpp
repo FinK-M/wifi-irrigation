@@ -30,7 +30,12 @@ static bool setup_client(const char *ssid, const char *password){
     	delay(1000);
     	Serial.printf("%d ", ++i);
     	// Connection timed out
-    	if (retries == i){ Serial.println(""); return false; }
+    	if (retries == i){ 
+            // Disable station mode
+            WiFi.disconnect(true);
+            Serial.println("Failed to connect");
+            return false;
+        }
   	}
   	Serial.printf(
   		"\n\nConnection established!\r\n"
