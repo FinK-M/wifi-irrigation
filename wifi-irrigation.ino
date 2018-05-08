@@ -6,7 +6,8 @@ extern const int NUM_SOLENOIDS = 4;
 extern const int solenoid_pins[NUM_SOLENOIDS] = {D5, D6, D7, D8};
 // Solenoid states (True is disabled as pullup)
 bool solenoid_states[NUM_SOLENOIDS] = {true, true, true, true};
-
+// time variable
+extern uint32_t time_seconds;
 // The name of the Wi-Fi network that will be created
 const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
@@ -37,7 +38,8 @@ void setup() {
     setup_fs();
     setup_wifi(name, ssid, password);
     setup_server();
-    setup_socket();   
+    setup_socket();
+    setup_NTP();
 }
 
 void loop(void){
@@ -45,6 +47,13 @@ void loop(void){
     webSocket.loop();                   
     // Listen for HTTP requests from clients
     server.handleClient();
+    // Check for NTP update events
+    if(NTP_loop()){
+        for(
+            int i = 0;
+            webSocket.sendTXT(i, String("TIME:") + format_time(time_seconds));
+            i++);
+    }
 }
 
 
