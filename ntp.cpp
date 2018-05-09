@@ -34,6 +34,9 @@ inline int getMinutes(uint32_t UNIXTime) { return UNIXTime / 60 % 60; }
 inline int getHours(uint32_t UNIXTime) { return UNIXTime / 3600 % 24; }
 
 void setup_NTP(){
+  // Return instantly if no internet available
+  if(WiFi.status() != WL_CONNECTED){ return; }
+
 	UDP.begin(123);
 	// Get the IP address of the NTP server
 	if(!WiFi.hostByName(NTPServerName, timeServerIP)) {
@@ -54,10 +57,10 @@ String format_time(uint32_t time){
 }
 
 
-uint32_t NTP_loop() {
+bool NTP_loop() {
   	millis_current = millis();
- 	// If a minute has passed since last NTP request
-  	if (TIME_TO_REFRESH) {
+ 	// If a minute has passed since last NTP request and WiFi is connected
+  	if (TIME_TO_REFRESH && !WLAN_DISCONNECTED) {
     	last_ntp_request = millis_current;
     	Serial.println("\r\nSending NTP request ...");
     	// Send an NTP request
@@ -89,8 +92,8 @@ uint32_t NTP_loop() {
 
 static uint32_t getTime() {
 	// If there's no response (yet)
-  	if (UDP.parsePacket() == 0) { return 0; }
-  	// read the packet into the buffer
+  if (UDP.parsePacket() == 0) { return 0; }
+  // read the packet into the buffer
 	UDP.read(NTPBuffer, NTP_PACKET_SIZE);
 	// Combine the 4 timestamp bytes into one 32-bit number
 	uint32_t NTPTime = (NTPBuffer[40] << 24) | (NTPBuffer[41] << 16) | (NTPBuffer[42] << 8) | NTPBuffer[43];

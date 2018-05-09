@@ -49,10 +49,8 @@ void loop(void){
     server.handleClient();
     // Check for NTP update events
     if(NTP_loop()){
-        for(
-            int i = 0;
-            webSocket.sendTXT(i, String("TIME:") + format_time(time_seconds));
-            i++);
+        int i = 0;
+        while(webSocket.sendTXT(i++, String("TIME:") + format_time(time_seconds)));
     }
 }
 
