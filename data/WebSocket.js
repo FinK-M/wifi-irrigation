@@ -19,6 +19,13 @@ connection.onmessage = function (e) {
   	if(state){ button.style.backgroundColor = "#00E640"; }
   	else{ button.style.backgroundColor = "#CF000F"; }
   }
+  else if("TIME" == message[0]){
+  	var hour = Number(message[1]);
+  	var minute = Number(message[2]);
+  	var second = Number(message[3]);
+  	var d = new Date(0, 0, 0, hour, minute, second);
+  	document.getElementById("time_text").innerHTML = d.toLocaleTimeString();
+  }
 };
 connection.onclose = function () {
   console.log('WebSocket connection closed');
