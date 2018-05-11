@@ -40,9 +40,12 @@ void setup() {
     setup_server();
     setup_socket();
     setup_NTP();
+    setup_OTA("ESP8266", "esp8266");
 }
 
 void loop(void){
+    // Check for new sketch to upload
+    ArduinoOTA.handle();
     // Check for socket events
     webSocket.loop();                   
     // Listen for HTTP requests from clients

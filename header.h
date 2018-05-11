@@ -7,3 +7,5 @@
 #include "socket.h"
 // For getting internet time
 #include "ntp.h"
+// For Over The Air sketch uploads
+#include "ota.h"
