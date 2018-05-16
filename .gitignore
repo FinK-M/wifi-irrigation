@@ -33,3 +33,5 @@
 *.sublime-workspace
 *.sublime-workspace
 wifi-irrigation.sublime-workspace
+.pioenvs
+.piolibdeps

@@ -1,4 +1,4 @@
-#include "header.h"
+#include "src/header.h"
 
 // Number of solenoids connected to MCU
 extern const int NUM_SOLENOIDS = 4;
