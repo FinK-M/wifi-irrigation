@@ -2,7 +2,7 @@
 
 const int retries = 10;
 
-const char *SSID = "22 Camside 2.4GHz";
+const char *SSID = "";
 const char *PASSWORD = "StrongAndStable";
 
 // Static function prototypes
