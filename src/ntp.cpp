@@ -9,6 +9,13 @@ const char* NTPServerName = "pool.ntp.org";
 // buffer to hold incoming and outgoing packets
 byte NTPBuffer[NTP_PACKET_SIZE];
 
+// British Summer Time
+TimeChangeRule BST = {"BST", Last, Sun, Mar, 1, 60};
+// Standard Time        
+TimeChangeRule GMT = {"GMT", Last, Sun, Oct, 2, 0};
+// United Kingdom (London, Belfast)
+Timezone UK(BST, GMT);
+
 // Data recieved from getTime() function - may be invalid
 static uint32_t time_ntp = 0;
 // As above, but checked for valididty
@@ -52,8 +59,11 @@ void setup_NTP(){
 }
 
 String format_time(uint32_t time){
+  time_t utc = time;
+  TimeChangeRule *tcr;
+  time_t local = UK.toLocal(utc, &tcr);
 	return String("") + \
-		getHours(time) + ":" + getMinutes(time) + ":" + getSeconds(time);
+		hour(local) + ":" + minute(local) + ":" + second(local);
 }
 
 

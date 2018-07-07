@@ -13,7 +13,7 @@ const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
 const char *password = "password";
 // Give a domain name for mDNS
-const char *name = "solenoid";
+const char *name = "****";
 
 // Create a webserver object that listens for HTTP request on port 80
 ESP8266WebServer server(80);
@@ -40,7 +40,7 @@ void setup() {
     setup_server();
     setup_socket();
     setup_NTP();
-    setup_OTA("ESP8266", "esp8266");
+    //setup_OTA("ESP8266", "esp8266");
 }
 
 void loop(void){

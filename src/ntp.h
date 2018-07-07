@@ -1,7 +1,12 @@
 #include <Arduino.h>
 // Standard ESP8266 WiFi library
 #include <ESP8266WiFi.h>
+// NTP uses UDP, not TCP
 #include <WiFiUdp.h>
+// For daylight saving time
+#include <Timezone.h>
+// Standard time functions and types
+#include <TimeLib.h>
 
 #define CALC_ACTUAL_TIME (time_unix + (millis_current - last_ntp_response)/1000)
 #define TIME_TO_REFRESH (millis_current - last_ntp_request > NTP_refresh_time)
