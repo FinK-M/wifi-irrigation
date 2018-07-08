@@ -15,6 +15,11 @@ TimeChangeRule BST = {"BST", Last, Sun, Mar, 1, 60};
 TimeChangeRule GMT = {"GMT", Last, Sun, Oct, 2, 0};
 // United Kingdom (London, Belfast)
 Timezone UK(BST, GMT);
+// Base pointer
+TimeChangeRule *tcr;
+// Store time with DST/Timezone compensation
+time_t time_local;
+
 
 // Data recieved from getTime() function - may be invalid
 static uint32_t time_ntp = 0;
@@ -22,9 +27,9 @@ static uint32_t time_ntp = 0;
 static uint32_t time_unix = 0;
 
 // Time converted to instantaneous second count
-uint32_t time_seconds = 0;
+time_t time_utc = 0;
 // As above, but previous reading
-static uint32_t time_seconds_prev = 0;
+static time_t time_utc_prev = 0;
 
 // Time since last ntp request was sent
 static uint32_t last_ntp_request = 0;
@@ -58,12 +63,9 @@ void setup_NTP(){
   	sendNTPpacket(timeServerIP); 
 }
 
-String format_time(uint32_t time){
-  time_t utc = time;
-  TimeChangeRule *tcr;
-  time_t local = UK.toLocal(utc, &tcr);
+String time_string(time_t time){
 	return String("") + \
-		hour(local) + ":" + minute(local) + ":" + second(local);
+		hour(time) + ":" + minute(time) + ":" + second(time);
 }
 
 
@@ -91,10 +93,11 @@ bool NTP_loop() {
     	Serial.flush();
     	ESP.reset();
   	}
-  	time_seconds = CALC_ACTUAL_TIME;
+  	time_utc = CALC_ACTUAL_TIME;
+    time_local = UK.toLocal(time_utc, &tcr);
 	// If a second has passed since last print
-	if (time_seconds != time_seconds_prev && time_unix != 0) { 
-	    time_seconds_prev = time_seconds;
+	if (time_utc != time_utc_prev && time_unix != 0) { 
+	    time_utc_prev = time_utc;
 	    return true;
 	}
 	else { return false; }

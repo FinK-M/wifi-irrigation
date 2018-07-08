@@ -20,11 +20,17 @@ connection.onmessage = function (e) {
   	else{ button.style.backgroundColor = "#CF000F"; }
   }
   else if("TIME" == message[0]){
-  	var hour = Number(message[1]);
-  	var minute = Number(message[2]);
-  	var second = Number(message[3]);
+  	var hour = Number(message[2]);
+  	var minute = Number(message[3]);
+  	var second = Number(message[4]);
   	var d = new Date(0, 0, 0, hour, minute, second);
-  	document.getElementById("local_text").innerHTML = d.toLocaleTimeString();
+    if ("UTC" == message[1]){
+      var id = "utc_text";  
+    }
+    else{
+      var id = "local_text";
+    }
+  	document.getElementById(id).innerHTML = d.toLocaleTimeString();
   }
 };
 connection.onclose = function () {

@@ -20,4 +20,4 @@ const unsigned long NTP_refresh_time = 60000;
 
 void setup_NTP();
 bool NTP_loop();
-String format_time(uint32_t time);
+String time_string(time_t time);
