@@ -24,7 +24,7 @@ connection.onmessage = function (e) {
   	var minute = Number(message[2]);
   	var second = Number(message[3]);
   	var d = new Date(0, 0, 0, hour, minute, second);
-  	document.getElementById("time_text").innerHTML = d.toLocaleTimeString();
+  	document.getElementById("local_text").innerHTML = d.toLocaleTimeString();
   }
 };
 connection.onclose = function () {
