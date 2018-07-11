@@ -102,3 +102,11 @@ input[type=range]::-webkit-slider-runnable-track {
 input.enabled[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
 }
+
+#start_time_setter{
+    width: 75px;
+}
+
+#run_time_setter{
+    width: 75px;
+}
