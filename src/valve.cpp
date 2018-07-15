@@ -31,6 +31,7 @@ bool Valve::turn_off(void){
 }
 
 void Valve::toggle_state(void){
-	digitalWrite(_pin, !digitalRead(_pin));
+	// _is_on is oppsite of actual pin state
+	digitalWrite(_pin, _is_on);
 	_is_on = !_is_on;
 }
