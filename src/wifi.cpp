@@ -2,9 +2,6 @@
 
 const int retries = 10;
 
-const char *SSID = 
-const char *PASSWORD = 
-
 // Static function prototypes
 static bool setup_client(const char *name, const char *ssid);
 static void setup_ap(const char *ssid, const char *password);

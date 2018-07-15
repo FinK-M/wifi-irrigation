@@ -14,7 +14,7 @@ const char *ssid = "ESP8266 Access Point";
 // The password required to connect to it, leave blank for an open network
 const char *password = "password";
 // Give a domain name for mDNS
-const char *name = "****";
+const char *name = "test-portal";
 
 // Create a webserver object that listens for HTTP request on port 80
 ESP8266WebServer server(80);
