@@ -41,10 +41,6 @@ static uint32_t millis_current = millis();
 static uint32_t getTime();
 static void sendNTPpacket(IPAddress& address);
 
-inline int getSeconds(uint32_t UNIXTime) { return UNIXTime % 60; }
-inline int getMinutes(uint32_t UNIXTime) { return UNIXTime / 60 % 60; }
-inline int getHours(uint32_t UNIXTime) { return UNIXTime / 3600 % 24; }
-
 void setup_NTP(){
   // Return instantly if no internet available
   if(WiFi.status() != WL_CONNECTED){ return; }
