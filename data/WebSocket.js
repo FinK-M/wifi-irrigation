@@ -44,7 +44,7 @@ function toggle (num) {
 
 function buttons_disabled(state){
 	console.log(`Buttons disabled: ${state}`)
-	var buttons = document.getElementsByClassName("button");
+	var buttons = document.getElementsByClassName("sol");
 	var i;
 	for (i = 0; i < buttons.length; i++){
 		buttons[i].disabled = state;
@@ -53,6 +53,8 @@ function buttons_disabled(state){
 
 function send_on_time(){
   var start_time = document.getElementById("start_time_setter").value;
+  var run_time = document.getElementById("run_time_setter").value;
   console.log(`Sending start time: ${start_time}`);
   connection.send(`TIME:${start_time}`);
+  connection.send(`RUN:${run_time}`);
 }

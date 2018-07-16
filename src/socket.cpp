@@ -76,6 +76,10 @@ static void command_interpreter(String command, uint8_t num){
     Serial.println(h);
     Serial.println(m);
   }
+  else if(command.startsWith("RUN")){
+    int r = command.substring(4, command.length()).toInt();
+    Serial.println(r);
+  }
   // '?' is query character
   else if (command.startsWith("?")){
     // Get status of all solenoids
