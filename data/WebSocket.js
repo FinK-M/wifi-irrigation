@@ -50,3 +50,9 @@ function buttons_disabled(state){
 		buttons[i].disabled = state;
 	}
 }
+
+function send_on_time(){
+  var start_time = document.getElementById("start_time_setter").value;
+  console.log(`Sending start time: ${start_time}`);
+  connection.send(`TIME:${start_time}`);
+}
