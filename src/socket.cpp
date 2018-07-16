@@ -70,6 +70,12 @@ static void command_interpreter(String command, uint8_t num){
     webSocket.sendTXT(num, buffer);
       
   }
+  else if (command.startsWith("TIME")){
+    int h = command.substring(5, 7).toInt();
+    int m = command.substring(8, 10).toInt();
+    Serial.println(h);
+    Serial.println(m);
+  }
   // '?' is query character
   else if (command.startsWith("?")){
     // Get status of all solenoids
