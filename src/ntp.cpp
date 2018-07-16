@@ -20,7 +20,6 @@ TimeChangeRule *tcr;
 // Store time with DST/Timezone compensation
 time_t time_local;
 
-
 // Data recieved from getTime() function - may be invalid
 static uint32_t time_ntp = 0;
 // As above, but checked for valididty
@@ -90,7 +89,7 @@ bool NTP_loop() {
     	ESP.reset();
   	}
   	time_utc = CALC_ACTUAL_TIME;
-    time_local = UK.toLocal(time_utc, &tcr);
+    setTime(UK.toLocal(time_utc, &tcr));
 	// If a second has passed since last print
 	if (time_utc != time_utc_prev && time_unix != 0) { 
 	    time_utc_prev = time_utc;
