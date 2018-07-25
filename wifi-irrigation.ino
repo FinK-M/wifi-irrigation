@@ -1,7 +1,7 @@
 #include "src/header.h"
 
 // Vector of valve object
-extern vector<Valve> valves{D5, D6, D7, D8};
+vector<Valve> valves{D5, D6, D7, D8};
 // time without respect to time zone or daylight savings
 extern time_t time_utc;
 // The name of the Wi-Fi network that will be created
