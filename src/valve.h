@@ -19,7 +19,7 @@ class Valve
 		void set_start_time(uint8_t hour, uint8_t minute);
 		void set_run_time(uint8_t minutes);
 
-		void update_state(void);
+		bool update_state(void);
 
 		uint8_t code;
 
@@ -29,6 +29,6 @@ class Valve
 		// Keep track of if solenoid is on
 		bool _is_on;
 		// For automatic timing
-		time_t _switch_on_time;
-		time_t _run_time;
+		uint16_t _switch_on_time;
+		uint16_t _end_time;
 };

@@ -64,14 +64,17 @@ static void command_interpreter(String command, uint8_t num){
       
   }
   else if (command.startsWith("TIME")){
-    int h = command.substring(5, 7).toInt();
-    int m = command.substring(8, 10).toInt();
-    Serial.println(h);
-    Serial.println(m);
+    uint8_t h = (uint8_t) command.substring(5, 7).toInt();
+    uint8_t m = (uint8_t) command.substring(8, 10).toInt();
+    Serial.printf("Start Time: %d:%d\r\n", h, m);
+    // Set all valves to same start time
+    for (auto& v : valves){ v.set_start_time(h, m); }
   }
   else if(command.startsWith("RUN")){
-    int r = command.substring(4, command.length()).toInt();
-    Serial.println(r);
+    uint8_t r = (uint8_t) command.substring(4, command.length()).toInt();
+    Serial.printf("Run Time: %d\r\n", r);
+    // Set all valves to same run time
+    for (auto& v : valves){ v.set_run_time(r); }
   }
   // '?' is query character
   else if (command.startsWith("?")){
@@ -80,7 +83,7 @@ static void command_interpreter(String command, uint8_t num){
       Serial.println("Sending Solenoid State");
       // Send individual messages for each solenoid to reuse .js code for
       // setting individual button colours
-      for (auto v : valves){
+      for (auto& v : valves){
         sprintf(buffer, "SOL:%d:%d", v.code, v.get_state());
         webSocket.sendTXT(num, buffer);
       }

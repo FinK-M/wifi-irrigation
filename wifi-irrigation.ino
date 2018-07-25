@@ -46,6 +46,20 @@ void loop(void){
         while(webSocket.sendTXT(i++, String("TIME:UTC:") + time_string(time_utc)));
         i = 0;
         while(webSocket.sendTXT(i++, String("TIME:LOCAL:") + time_string(now())));
+        valve_checker();
+    }
+
+    
+}
+
+void valve_checker(void){
+    for (auto& v : valves){
+        if(v.update_state()){
+            int i = 0;
+            while(webSocket.sendTXT(
+                i++, 
+                String("SOL:") + v.code + ":" + v.get_state()));
+        }
     }
 }
 
