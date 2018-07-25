@@ -5,8 +5,7 @@ extern WebSocketsServer webSocket;
 extern bool solenoid_states[];
 extern int solenoid_pins[];
 extern int NUM_SOLENOIDS;
-
-Valve vtest(1);
+extern vector<Valve> valves;
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght);
 static void command_interpreter(String command, uint8_t num);

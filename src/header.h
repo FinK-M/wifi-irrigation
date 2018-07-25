@@ -1,3 +1,6 @@
+#include <vector>
+using std::vector;
+
 #include "wifi.h"
 // SPIFFS File System
 #include "spiffs.h"

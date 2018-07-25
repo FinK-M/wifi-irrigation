@@ -4,4 +4,7 @@
 
 #include "Valve.h"
 
+#include <vector>
+using std::vector;
+
 void setup_socket();

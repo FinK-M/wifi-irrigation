@@ -6,6 +6,8 @@ extern const int NUM_SOLENOIDS = 4;
 extern const int solenoid_pins[NUM_SOLENOIDS] = {D5, D6, D7, D8};
 // Solenoid states (True is disabled as pullup)
 bool solenoid_states[NUM_SOLENOIDS] = {true, true, true, true};
+// Vector of valve object
+extern vector<Valve> valves{D5, D6, D7, D8};
 // time without respect to time zone or daylight savings
 extern time_t time_utc;
 // The name of the Wi-Fi network that will be created
