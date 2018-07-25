@@ -1,11 +1,5 @@
 #include "src/header.h"
 
-// Number of solenoids connected to MCU
-extern const int NUM_SOLENOIDS = 4;
-// Pin on which solenoid is located
-extern const int solenoid_pins[NUM_SOLENOIDS] = {D5, D6, D7, D8};
-// Solenoid states (True is disabled as pullup)
-bool solenoid_states[NUM_SOLENOIDS] = {true, true, true, true};
 // Vector of valve object
 extern vector<Valve> valves{D5, D6, D7, D8};
 // time without respect to time zone or daylight savings
@@ -24,12 +18,6 @@ WebSocketsServer webSocket = WebSocketsServer(81);
 
 
 void setup() {
-    // Set solenoid pins as output and drive them high
-    for(uint8_t i = 0; i < NUM_SOLENOIDS; i++){
-      pinMode(solenoid_pins[i], OUTPUT);
-      digitalWrite(solenoid_pins[i], HIGH);
-    } 
-
     // Clear any previously stored WiFi configuration
     ESP.eraseConfig();
 

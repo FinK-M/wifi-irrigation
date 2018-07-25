@@ -1,10 +1,7 @@
 #include "socket.h"
-
+// Server instance created in main sketch
 extern WebSocketsServer webSocket;
-
-extern bool solenoid_states[];
-extern int solenoid_pins[];
-extern int NUM_SOLENOIDS;
+// Vector containing solenoid valve objects
 extern vector<Valve> valves;
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght);
@@ -59,13 +56,10 @@ static void command_interpreter(String command, uint8_t num){
     Serial.printf("Solenoid %c switched\r\n", command[4]);
     // Convert ASCII character to equivalent int, then offset by 1
     int sol_num = command[4] - '0' - 1;
-
     // Flip chosen solenoid state and change flag
-    solenoid_states[sol_num] = !solenoid_states[sol_num];
-    digitalWrite(solenoid_pins[sol_num], solenoid_states[sol_num]);
-
+    valves[sol_num].toggle_state();
     // Construct confirmation message and send into socket
-    sprintf(buffer, "SOL:%c:%d", command[4], !solenoid_states[sol_num]);
+    sprintf(buffer, "SOL:%c:%d", command[4], valves[sol_num].get_state());
     webSocket.sendTXT(num, buffer);
       
   }
@@ -86,8 +80,8 @@ static void command_interpreter(String command, uint8_t num){
       Serial.println("Sending Solenoid State");
       // Send individual messages for each solenoid to reuse .js code for
       // setting individual button colours
-      for(int i = 0; i < NUM_SOLENOIDS; i++){
-        sprintf(buffer, "SOL:%d:%d", i + 1, !solenoid_states[i]);
+      for (auto v : valves){
+        sprintf(buffer, "SOL:%d:%d", v.code, v.get_state());
         webSocket.sendTXT(num, buffer);
       }
     }
