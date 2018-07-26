@@ -13,7 +13,7 @@ void setup_socket() {
   webSocket.begin();                          
   // if there's an incomming websocket message, go to function 'webSocketEvent'
   webSocket.onEvent(webSocketEvent);
-  Serial.println("WebSocket server started.");
+  Serial.printf_P(PSTR("WebSocket server started\r\n"));
 }
 
 static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght) {
@@ -21,14 +21,14 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
 
         // if the websocket is disconnected
         case WStype_DISCONNECTED:             
-            Serial.printf("[%u] Disconnected!\n", num);
+            Serial.printf_P(PSTR("[%u] Disconnected!\n"), num);
             break;
 
         // if a new websocket connection is established
         case WStype_CONNECTED: {          
             IPAddress ip = webSocket.remoteIP(num);
-            Serial.printf(
-                "[%u] Connected from %d.%d.%d.%d url: %s\n",
+            Serial.printf_P(
+                PSTR("[%u] Connected from %d.%d.%d.%d url: %s\n"),
                 num, ip[0], ip[1], ip[2], ip[3], payload);
             }             
             break;
@@ -36,7 +36,7 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
 
         // if new text data is received
         case WStype_TEXT:{
-            Serial.printf("[%u] get Text: %s\n", num, payload);
+            Serial.printf_P(PSTR("[%u] get Text: %s\n"), num, payload);
             // Convert payload from uint8_t array to string object
             String text = String((char*)payload);
             command_interpreter(text, num);
@@ -44,7 +44,7 @@ static void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t
             break;
 
         default:
-            Serial.printf("Unhandled Signal Type\n");
+            Serial.printf_P(PSTR("Unhandled Signal Type\n"));
     }
 }
 
@@ -53,26 +53,26 @@ static void command_interpreter(String command, uint8_t num){
   char buffer[20];
 
   if (command.startsWith("SOL")) {
-    Serial.printf("Solenoid %c switched\r\n", command[4]);
+    Serial.printf_P(PSTR("Solenoid %c switched\r\n"), command[4]);
     // Convert ASCII character to equivalent int, then offset by 1
     int sol_num = command[4] - '0' - 1;
     // Flip chosen solenoid state and change flag
     valves[sol_num].toggle_state();
     // Construct confirmation message and send into socket
-    sprintf(buffer, "SOL:%c:%d", command[4], valves[sol_num].get_state());
+    sprintf_P(buffer, PSTR("SOL:%c:%d"), command[4], valves[sol_num].get_state());
     webSocket.sendTXT(num, buffer);
       
   }
   else if (command.startsWith("TIME")){
     uint8_t h = (uint8_t) command.substring(5, 7).toInt();
     uint8_t m = (uint8_t) command.substring(8, 10).toInt();
-    Serial.printf("Start Time: %d:%d\r\n", h, m);
+    Serial.printf_P(PSTR("Start Time: %d:%d\r\n"), h, m);
     // Set all valves to same start time
     for (auto& v : valves){ v.set_start_time(h, m); }
   }
   else if(command.startsWith("RUN")){
     uint8_t r = (uint8_t) command.substring(4, command.length()).toInt();
-    Serial.printf("Run Time: %d\r\n", r);
+    Serial.printf_P(PSTR("Run Time: %d\r\n"), r);
     // Set all valves to same run time
     for (auto& v : valves){ v.set_run_time(r); }
   }
@@ -80,11 +80,11 @@ static void command_interpreter(String command, uint8_t num){
   else if (command.startsWith("?")){
     // Get status of all solenoids
     if (command.startsWith("STATE", 1)){
-      Serial.println("Sending Solenoid State");
+      Serial.printf_P(PSTR("Sending Solenoid State\r\n"));
       // Send individual messages for each solenoid to reuse .js code for
       // setting individual button colours
       for (auto& v : valves){
-        sprintf(buffer, "SOL:%d:%d", v.code, v.get_state());
+        sprintf_P(buffer, PSTR("SOL:%d:%d"), v.code, v.get_state());
         webSocket.sendTXT(num, buffer);
       }
     }
