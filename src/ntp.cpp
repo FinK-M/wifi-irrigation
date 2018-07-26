@@ -47,14 +47,14 @@ void setup_NTP(){
 	UDP.begin(123);
 	// Get the IP address of the NTP server
 	if(!WiFi.hostByName(NTPServerName, timeServerIP)) {
-    	Serial.println("DNS lookup failed. Rebooting.");
+    	Serial.println(F("DNS lookup failed. Rebooting."));
     	Serial.flush();
     	ESP.reset();
   	}
-  	Serial.print("Time server IP:\t");
+  	Serial.print(F("Time server IP:\t"));
   	Serial.println(timeServerIP);
   
-  	Serial.println("\r\nSending NTP request ...");
+  	Serial.println(F("\r\nSending NTP request ..."));
   	sendNTPpacket(timeServerIP); 
 }
 
@@ -69,7 +69,7 @@ bool NTP_loop() {
  	// If a minute has passed since last NTP request and WiFi is connected
   	if (TIME_TO_REFRESH && !WLAN_DISCONNECTED) {
     	last_ntp_request = millis_current;
-    	Serial.println("\r\nSending NTP request ...");
+    	Serial.println(F("\r\nSending NTP request ..."));
     	// Send an NTP request
     	sendNTPpacket(timeServerIP);               
   	}
@@ -79,12 +79,12 @@ bool NTP_loop() {
   	 // If a new timestamp has been received
   	if (time_ntp) {                                 
     	time_unix = time_ntp;
-    	Serial.print("NTP response:\t");
+    	Serial.print(F("NTP response:\t"));
     	Serial.println(time_unix);
     	last_ntp_response = millis_current;
   	}
   	else if (UPDATE_TIMEOUT) {
-    	Serial.println("More than 1 hour since last NTP response. Rebooting.");
+    	Serial.println(F("More than 1 hour since last NTP response. Rebooting."));
     	Serial.flush();
     	ESP.reset();
   	}
