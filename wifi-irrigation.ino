@@ -48,8 +48,6 @@ void loop(void){
         while(webSocket.sendTXT(i++, String("TIME:LOCAL:") + time_string(now())));
         valve_checker();
     }
-
-    
 }
 
 void valve_checker(void){
