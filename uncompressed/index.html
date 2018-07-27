@@ -75,11 +75,11 @@
           </tr>
         </table>
         <h3>Valve to set</h3>
-        <input type="radio" name="gender" value=1> 1
-        <input type="radio" name="gender" value=2> 2
-        <input type="radio" name="gender" value=3> 3
-        <input type="radio" name="gender" value=4> 4
-        <input type="radio" name="gender" value="All"> All 
+          <input type="checkbox" name="v_enable_individual" value=1> 1
+          <input type="checkbox" name="v_enable_individual" value=2> 2
+          <input type="checkbox" name="v_enable_individual" value=3> 3
+          <input type="checkbox" name="v_enable_individual" value=4> 4
+          <input type="checkbox" id="v_enable_all" value="All" onclick="toggle_state(this);"> All
         <br>
         <input type="submit" value="Set" class="button">
       </form>

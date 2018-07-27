@@ -54,7 +54,18 @@ function buttons_disabled(state){
 function send_on_time(){
   var start_time = document.getElementById("start_time_setter").value;
   var run_time = document.getElementById("run_time_setter").value;
+  var individuals = document.getElementsByName("v_enable_individual");
   console.log(`Sending start time: ${start_time}`);
+  for(var i = 0; i < individuals.length; i++){
+    console.log(individuals[i].value, individuals[i].checked);  
+  }
   connection.send(`TIME:${start_time}`);
   connection.send(`RUN:${run_time}`);
+}
+
+function toggle_state(source){
+  var individuals = document.getElementsByName("v_enable_individual");
+  for(var i = 0; i < individuals.length; i++){
+    individuals[i].checked = source.checked;  
+  }
 }
